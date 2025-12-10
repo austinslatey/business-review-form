@@ -1,0 +1,27 @@
+-------- Location of form ------------
+This form will be executed inside of a wordpress webpage using the custom HTML widget inside of the Elementor widget menu.
+Submission data will be sent to a backend server with the api endpoint /reviews
+
+
+-------- ENDPOINTS TO CONNECT TO HUBSPOT (Key : Value)-------
+- First name : firstname
+- Last name : lastname
+- Email : email
+- Was this your first visit to Waldoch : was_this_your_first_visit_to_waldoch
+- How would you rate the helpfullness of our personnel : how_would_you_rate_helpfulness_of_our_personnel_
+- How would you rate our communication with you? : how_would_you_rate_our_communication_with_you_
+- How would you rate our quality of service you received? : quality_of_service_you_received_
+- Was your vehicle completed on schedule? : was_your_vehicle_completed_on_schedule_
+- Would you recommend us to Family or Friends? : would_you_recommend_us_to_family_or_friends_
+- What can we do to improve our service? : what_can_we_do_to_improve_our_service_
+
+
+-------- MULTIPART FORM STRUCTURE ----------
+I would like a few aspects of gamificaiton implemented in this review form. 
+
+First name, last name, email and Data privacy and consent should be the final part of the form to fill out
+
+Otherwise, the form questions should be in order listed above, each question being a single step to the multi-part form.
+
+Data submissions should be sent to the same hubspot form for now - will update criteria once you've made it this far.
+
