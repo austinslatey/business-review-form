@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leave a Review - Waldoch</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -28,13 +30,21 @@
 
         <form id="reviewForm">
             <div class="w-review-steps">
-                <!-- Step 1 -->
+                <!-- Step 1 – First Visit -->
                 <div class="form-step active">
                     <h3>Was this your first visit to Waldoch?</h3>
-                    <div class="radio-group">
-                        <label><input type="radio" name="was_this_your_first_visit_to_waldoch" value="Yes" required>
-                            Yes</label>
-                        <label><input type="radio" name="was_this_your_first_visit_to_waldoch" value="No"> No</label>
+                    <div class="yes-no-group">
+                        <label class="option-card no">
+                            <input type="radio" name="was_this_your_first_visit_to_waldoch" value="No" required>
+                            <i class="fas fa-times icon"></i>
+                            <span class="label-text">No</span>
+                        </label>
+
+                        <label class="option-card yes">
+                            <input type="radio" name="was_this_your_first_visit_to_waldoch" value="Yes" required>
+                            <i class="fas fa-check icon"></i>
+                            <span class="label-text">Yes</span>
+                        </label>
                     </div>
                 </div>
 
@@ -83,24 +93,38 @@
                     </div>
                 </div>
 
-                <!-- Step 5 -->
+                <!-- Step 5 – On Schedule -->
                 <div class="form-step">
                     <h3>Was your vehicle completed on schedule?</h3>
-                    <div class="radio-group">
-                        <label><input type="radio" name="was_your_vehicle_completed_on_schedule_" value="Yes" required>
-                            Yes</label>
-                        <label><input type="radio" name="was_your_vehicle_completed_on_schedule_" value="No"> No</label>
+                    <div class="yes-no-group">
+                        <label class="option-card no">
+                            <input type="radio" name="was_your_vehicle_completed_on_schedule_" value="No" required>
+                            <i class="fas fa-times icon"></i>
+                            <span class="label-text">No</span>
+                        </label>
+                        <label class="option-card yes">
+                            <input type="radio" name="was_your_vehicle_completed_on_schedule_" value="Yes" required>
+                            <i class="fas fa-check icon"></i>
+                            <span class="label-text">Yes</span>
+                        </label>
                     </div>
                 </div>
 
-                <!-- Step 6 -->
+                <!-- Step 6 – Recommend -->
                 <div class="form-step">
                     <h3>Would you recommend us to family or friends?</h3>
-                    <div class="radio-group">
-                        <label><input type="radio" name="would_you_recommend_us_to_family_or_friends_" value="Yes"
-                                required> Yes</label>
-                        <label><input type="radio" name="would_you_recommend_us_to_family_or_friends_" value="No">
-                            No</label>
+                    <div class="yes-no-group">
+                        <label class="option-card no">
+                            <input type="radio" name="would_you_recommend_us_to_family_or_friends_" value="No" required>
+                            <i class="fas fa-times icon"></i>
+                            <span class="label-text">No</span>
+                        </label>
+                        <label class="option-card yes">
+                            <input type="radio" name="would_you_recommend_us_to_family_or_friends_" value="Yes"
+                                required>
+                            <i class="fas fa-check icon"></i>
+                            <span class="label-text">Yes</span>
+                        </label>
                     </div>
                 </div>
 
