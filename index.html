@@ -51,7 +51,7 @@
                 <!-- Step 2 – Helpfulness -->
                 <div class="form-step">
                     <h3>How would you rate the helpfulness of our personnel?</h3>
-                    <div class="yes-no-group"> <!-- Reusing same group class for identical layout -->
+                    <div class="yes-no-group">
                         <label class="option-card poor">
                             <input type="radio" name="how_would_you_rate_helpfulness_of_our_personnel_" value="Poor"
                                 required>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <!-- Step 3 – Communication -->
+                <!-- Step 3 – Communication (same pattern) -->
                 <div class="form-step">
                     <h3>How would you rate our communication with you?</h3>
                     <div class="yes-no-group">
@@ -88,8 +88,7 @@
                             <span class="label-text">Average</span>
                         </label>
                         <label class="option-card excellent">
-                            <input type="radio" name="how_would_you_rate_helpfulness_of_our_personnel_"
-                                value="Excellent">
+                            <input type="radio" name="how_would_you_rate_our_communication_with_you_" value="Excellent">
                             <i class="far fa-smile icon"></i>
                             <span class="label-text">Excellent</span>
                         </label>
@@ -163,14 +162,41 @@
                 <!-- Step 8 – Personal Info LAST -->
                 <div class="form-step">
                     <h3>Almost done! Just tell us who you are</h3>
+
                     <input type="text" name="firstname" placeholder="First Name" required>
                     <input type="text" name="lastname" placeholder="Last Name" required>
                     <input type="email" name="email" placeholder="Email" required>
-                    <label class="consent" style="margin-top:15px;font-size:14px;">
-                        <input type="checkbox" name="consent" required>
-                        I agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a> and being contacted
-                        about my review
-                    </label>
+
+                    <!-- NEW PRIVACY & MARKETING CONSENT (NOT REQUIRED) -->
+                    <div
+                        style="margin: 30px 0; padding: 20px; background: #f8fafc; border-radius: 16px; border-left: 5px solid var(--primary);">
+                        <p style="margin:0 0 16px; font-size:15px; line-height:1.6; color:#444;">
+                            Waldoch is committed to protecting and respecting your privacy, and we’ll only use your
+                            personal information to administer your account and to provide the products and services you
+                            requested from us. From time to time, we would like to contact you about our products and
+                            services, as well as other content that may be of interest to you. If you consent to us
+                            contacting you for this purpose, please tick below to say how you would like us to contact
+                            you:
+                        </p>
+
+                        <label
+                            style="display:flex; align-items:center; gap:12px; margin:16px 0; font-size:15px; cursor:pointer;">
+                            <input type="checkbox" name="consent_marketing">
+                            <span>I agree to receive other communications from Waldoch.</span>
+                        </label>
+
+                        <p style="margin:20px 0 0; font-size:14px; color:#666; line-height:1.6;">
+                            You can unsubscribe from these communications at any time. For more information on how to
+                            unsubscribe, our privacy practices, and how we are committed to protecting and respecting
+                            your privacy, please review our <a href="/privacy-policy" target="_blank"
+                                style="color:var(--primary); text-decoration:underline;">Privacy Policy</a>.
+                        </p>
+
+                        <p style="margin:20px 0 0; font-size:14px; color:#444; font-weight:500;">
+                            By clicking submit below, you consent to allow Waldoch to store and process the personal
+                            information submitted above to provide you the content requested.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Success Step -->
